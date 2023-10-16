@@ -46,7 +46,7 @@
     </div>
 
     <!-- component -->
-    <div class=" bottomCards mx-auto container md:px-24 px-7 lg:py-20 lg:px-36">
+    <!-- <div class=" bottomCards mx-auto container md:px-24 px-7 lg:py-20 lg:px-36">
       <div class="text-white text-xl lg:text-2xl">
         <h1 class="mb-20">Other Noteworthy Projects</h1>
       </div>
@@ -103,7 +103,7 @@
         class="transition-all p-2 pl-5 pr-5 m-6 duration-700 transform hover:bg-emerald-700 text-base rounded-lg focus:border-4"
         style="border:2px solid #00A99D; color:#00A99D"
       >{{show?'Show Less':'Show More' }}</button>
-    </div>
+    </div> -->
   </div>
 </template>
 
