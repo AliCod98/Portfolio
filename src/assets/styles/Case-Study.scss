@@ -1,0 +1,132 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.project {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  
+}
+.project .card {
+  height: 20vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  z-index: 9;
+  position: relative;
+
+  background: #eff0f4;
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.25);
+  transition: 1s;
+ 
+}
+
+
+.project .card:hover {
+  transform: translateX(50%);
+ 
+}
+
+.project .card .imgBox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transform-origin: left;
+  transform-style: preserve-3d;
+  background: #000;
+  box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.25);
+  transition: 1s;
+}
+
+.project .card:hover .imgBox {
+  transform: rotateY(-180deg);
+}
+
+.project .card .imgBox img , .video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+.project ul li{
+  font-size: 10px;
+}
+
+.project .video{
+  transform: rotateY(180deg);
+  overflow: hidden;
+}
+
+.project .card .details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project .card .details .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.project .card .details .content h2 {
+  text-align: center;
+  font-weight: 700;
+  line-height: 2em;
+}
+
+.project .card .details .content h2 span {
+  color: #139487;
+  
+}
+
+.project .card .details .content .social-icons {
+  position: relative;
+  display: flex;
+  margin-top: 10px;
+}
+
+.project .card .details .content .social-icons a {
+  display: inline-block;
+  width: 2vw;
+  height: 2vw;
+  background: #333;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin: 5px;
+  font-size: 18px;
+  transition: 0.2s;
+  font-size: 1vw;
+}
+
+.project .card .details .content .social-icons a:hover {
+  background: #139487;
+}
+@media (max-width: 740px) {
+  .project .card  {
+     display: none;
+ }
+}

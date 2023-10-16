@@ -1,0 +1,262 @@
+:root {
+  --red: #100355;
+  --cyan: #139487;
+  --orange: #D08101;
+  --blue: #1a6a8d;
+  --varyDarkBlue: hsl(234, 12%, 34%);
+  --grayishBlue: hsl(230, 3%, 41%);
+  --veryLightGray: hsl(0, 0%, 98%);
+  --weight1: 200;
+  --weight2: 400;
+  --weight3: 600;
+}
+
+.case {
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #efefef;
+ min-height: 140vh;
+  position: relative;
+}
+.case .SER{
+opacity: 0.2;
+
+}
+.case .attribution { 
+  font-size: 11px; text-align: center; 
+}
+.case .attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+.case h1:first-of-type {
+  font-weight: var(--weight1);
+  color: var(--varyDarkBlue);
+
+}
+
+.case h1:last-of-type {
+  color: var(--varyDarkBlue);
+}
+
+@media (max-width: 400px) {
+  .case h1 {
+      font-size: 2rem;
+  }
+}
+
+.case .header {
+  text-align: start;
+  line-height: 0.8;
+  margin-bottom: 50px;
+
+ 
+}
+
+.case .header h1 {
+  margin: 0 auto;
+  line-height: 2;
+  color: var(--grayishBlue);
+}
+
+
+.case .box p {
+  color: var(--grayishBlue);
+}
+
+
+.case .box {
+  border-radius: 5px;
+border-radius: 22px;
+background-color: #f3ecff;
+box-shadow: 10px 10px 15px rgba(0, 0, 0, .2), -10px -10px 15px rgba(255, 255, 255, 0.5), inset 5px 5px 5px rgba(255, 255, 255, 0.5), inset -5px -5px 5px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin: 20px;  
+  z-index: 2;
+  
+}
+
+img {
+  float: right;
+  height: 130px;
+  width: 130px;
+ 
+}
+
+.case p{
+  margin-top: 10px;
+}
+@media (max-width: 450px) {
+  .box {
+      height: 200px;
+  }
+}
+
+@media (max-width: 950px) and (min-width: 450px) {
+  .box {
+      text-align: center;
+      height: 180px;
+  }
+}
+
+.cyan {
+  border-top: 3px solid var(--cyan);
+}
+.red {
+  border-top: 3px solid var(--red);
+}
+.blue {
+  border-top: 3px solid var(--blue);
+}
+.orange {
+  border-top: 3px solid var(--orange);
+}
+
+h2 {
+  color: var(--varyDarkBlue);
+  font-weight: var(--weight3);
+}
+
+
+@media (min-width: 950px) {
+  .row1-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     
+  }
+  
+  .row2-container {
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .box-down {
+      position: relative;
+      top: 150px;
+  }
+  .box {
+      width: 20%;
+   
+  }
+.case  .header p {
+      width: 30%;
+  }
+  
+}
+.wrapper {
+
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  top:0;
+  z-index: 0;
+}
+
+.background-shapes {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.shape {
+  animation: slow-spin 15s infinite;
+  bottom: -100px;
+  display: block;
+  list-style: none;
+  position: absolute;
+  transition-timing-function: linear;
+}
+
+.square {
+  background-color: rgba(197, 188, 188, 0.15);
+  height: 40px;
+  width: 40px;
+}
+
+.triangle {
+  border-bottom: 100px solid rgba(197, 197, 197, 0.15);
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  height: 0;
+  width: 0;
+}
+
+.circle {
+  background: rgba(199, 199, 199, 0.15);
+  border-radius: 50px;
+  height: 100px;
+  width: 100px;
+}
+
+.shape:nth-child(1){ left: 10% }
+.shape:nth-child(2){
+  animation-delay: 2s;
+  animation-duration: 17s;
+  height: 80px;
+  left: 20%;
+  width: 80px;
+}
+
+.shape:nth-child(3){
+  animation-delay: 4s;
+  left: 25%;
+}
+
+.shape:nth-child(4){
+  animation-duration: 32s;
+  height: 60px;
+  left: 40%;
+  width: 60px;
+}
+
+.square:nth-child(4){ background-color: rgba(255, 255, 255, .25) }
+.shape:nth-child(5){ left: 70% }
+.shape:nth-child(6){
+  animation-delay: 3s;
+  height: 120px;
+  left: 80%;
+  width: 120px;
+}
+
+.square:nth-child(6){ background-color: rgba(255, 255, 255, .2) }
+.shape:nth-child(7){
+  animation-delay: 7s;
+  height: 160px;
+  left: 32%;
+  width: 160px;
+}
+
+.shape:nth-child(8){
+  animation-delay: 15s;
+  animation-duration: 40s;
+  height: 20px;
+  left: 55%;
+  width: 20px;
+}
+
+.shape:nth-child(9){
+  animation-delay: 2s;
+  animation-duration: 40s;
+  height: 10px;
+  left: 25%;
+  width: 10px;
+}
+
+.square:nth-child(9){ background-color: rgba(255, 255, 255, .3) }
+.shape:nth-child(10){
+  animation-delay: 11s;
+  height: 160px;
+  left: 90%;
+  width: 160px;
+}
+
+@keyframes slow-spin {
+  0%   { transform: translateY(0) }
+  100% { transform: translateY(-700px) rotate(600deg) }
+}
